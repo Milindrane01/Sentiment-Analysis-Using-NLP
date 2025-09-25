@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 
 # Load the trained model
-# model = joblib.load(r"C:\Users\bittu\PycharmProjects\sentimentanalysis\model.pkl")
+# model = joblib.load(r"C:\Users\ranem\sentimentanalysis\model.pkl")
 model = joblib.load("model.pkl")
 
 # Define sentiment labels
@@ -22,3 +22,4 @@ if st.button("Predict"):
 
     # Display predicted sentiment
     st.write(f"Predicted Sentiment: {predicted_sentiment_label}")
+
